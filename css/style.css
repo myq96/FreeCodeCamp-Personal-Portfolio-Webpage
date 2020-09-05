@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root{
+    --primary-color: #be3144;
+    --secondary-color: #2f3134;
+    --work: #45567d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.54;
+}
+
+#about{
+    height: 100vh;
+    background-color: var(--secondary-color);
+}
+
+#navbar{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 0rem 3rem;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100vw;
+}
+
+#navbar ul{
+    list-style: none;
+    display: flex;
+}
+
+#navbar ul a{
+    display: inline-block;
+    padding: 1.2rem 2rem;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+#navbar ul a:hover{
+    background-color: #45567d;
+}
+
+img{
+    width: 100%;
+}
+
+.container{
+    max-width: 1400px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+}
+
+#about .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#title{
+    color: white;
+    font-size: 5rem;
+    font-weight: 1200;
+}
+
+.lead{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    font-weight: 100;
+}
+
+#work{
+    text-align: center;
+    width: 100%;
+    padding: 3rem 0rem;
+    background-color: var(--work);
+}
+
+
+#work .projects{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 1rem;
+}
+
+#work .container >h1{
+    margin-top: 3rem;
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: bolder;
+    margin-bottom: .1rem;
+    letter-spacing: 2px;
+}
+
+#work .bottom-line{
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    width: 53%;
+    margin: auto;
+    margin-bottom: 4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+#work .projects .box a > img{
+    height: 400px;
+    /* margin-bottom: 0; */
+}
+#work .projects .box p{
+    background-color: #303841;
+    color: white;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-top: 0;
+    text-decoration: none;
+}
+#work .projects .box p span{
+    /* background-color: #303841; */
+    color: orangered;
+}
+
+.show-all{
+    background-color: #303841;
+    text-align: center;
+    padding: 10px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    margin-top: 45px;
+    margin-bottom: 100px;
+    width: 15%;
+    
+}
+
+.show-all a p{
+    color: #fff;
+}
+
+.show-all:hover{
+    transition: 0.5s;
+    background-color: #be3144 !important;
+}
+
+#contact{
+    text-align: center;
+    width: 100%;
+    padding:5rem 0rem;
+    background-color: var(--secondary-color);
+}
+
+#contact .container>h1{
+    margin-top: 45px;
+    color: #fff;
+    font-size: 4rem;
+}
+
+#contact .container>p{
+    color: rgb(189, 183, 183);
+    font-size: 1.5rem;
+}
+
+.contacts a i{
+    margin: 5rem 1rem;
+    color: #eee;
+    font-size: 2rem;
+}
+
+/* .contactLinks:hover{
+    transition: 1s;
+    margin-top: 5rem;
+} */
+
+footer{
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0rem;
+    background-color: var(--secondary-color);
+    border-top: 3px solid var(--primary-color);
+}
+
+footer>p{
+    color: #eee;
+    font-weight: 800;
+    letter-spacing: 5px;
+}
+
+@media screen and (max-width: 750px){
+    #navbar{
+        padding: 0rem 0rem;
+    }
+
+    #navbar ul a{
+     
+        padding: 1rem 1rem;
+        font-size: 1.4rem;
+        font-weight: 700;
+    }
+    #work .projects{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        /* grid-gap: 1rem; */
+    }
+
+    .show-all{
+        background-color: #303841;
+        text-align: center;
+        padding: 10px;
+        font-weight: 300;
+        font-size: 1.5rem;
+        margin: 0 auto;
+        margin-top: 45px;
+        margin-bottom: 100px;
+        width: 100%;
+    }
+
+    #contact .container>h1{
+        font-size: 1.8rem;
+        margin-top: 45px;
+    }
+    #contact .container>p{
+        font-size: 1.2rem;
+    }
+
+    .contacts a i{
+        display: block;
+        margin: 2rem 0rem;
+        color: #eee;
+        font-size: 1.4rem;
+    }    
+
+    footer>p{
+        color: #eee;
+        font-weight: 800;
+        letter-spacing: 2px;
+    }
+}
+
+@media screen and (max-width: 600px){
+    #title{
+        color: white;
+        font-size: 2.5rem;
+        font-weight: 1200;
+    }
+    
+    .lead{
+        font-size: 1.5rem;
+        color: var(--primary-color);
+        font-weight: 100;
+    }
+
+    #work .container >h1{
+        margin-top: 3rem;
+        font-size: 1.5rem;
+        color: #fff;
+        font-weight: bolder;
+        margin-bottom: .1rem;
+        letter-spacing: 1px;
+    }
+}
